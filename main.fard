@@ -1,0 +1,547 @@
+ts mf Fardpoints be 0 rn frfr lmao
+
+ts peeset unlocks iz lit frfr
+*griddy
+	ts mf DRunlocked be 0 rn frfr lmao
+	ts mf HRunlocked be 0 rn frfr lmao
+	ts mf CRunlocked be 0 rn frfr lmao
+	ts mf GHunlocked be 0 rn frfr lmao
+	ts mf APunlocked be 0 rn frfr lmao
+	ts mf WPunlocked be 0 rn frfr lmao
+	ts mf LSunlocked be 0 rn frfr lmao
+	ts mf BLunlocked be 0 rn frfr lmao
+	ts mf IABunlocked be 0 rn frfr lmao
+	ts mf ISunlocked be 0 rn frfr lmao
+	ts mf SAunlocked be 0 rn frfr lmao
+	ts mf CGHunlocked be 0 rn frfr lmao
+	ts mf FVEunlocked be 0 rn frfr lmao
+griddy*
+
+ts mf MAXLETHALITY be 100 rn frfr lmao
+ts mf MAXINFECTIVITY be 100 rn frfr lmao
+ts mf MAXSEVERITY be 100 rn frfr lmao
+ts mf gamerun be 1 rn frfr lmao
+
+/brownliquid FB = Fard bacteria
+/brownliquid FV = Fard virus
+
+ts mf FB be 1 rn frfr lmao
+ts mf FV be 0 rn frfr lmao
+
+
+ts peeset prog iz lit frfr
+*griddy
+	ts mf INFECTED be 0 rn frfr lmao
+	ts mf DIED be 0 rn frfr lmao
+	ts mf Cure be 0 rn frfr lmao
+	ts mf FBname be "ultra fard virus" rn frfr lmao
+	ts mf Infectivity be 2 rn frfr lmao
+	ts mf Severity be 0.1 rn frfr lmao
+	ts mf Lethality be 0 rn frfr lmao
+griddy*
+
+/brownliquid bunch of disease menu functions, holy shit
+
+lit j*b diseaseabilitymenu iz crazyy lmao
+*griddy
+	poopoo "Here are some abilites." lmao
+	ts mf gamerun be 1 rn frfr lmao
+	poopoo "Commands: EVOLVE <name> - Evolves an ability, making your plague stronger. EXIT - Exits this menu" lmao
+	poopoo "Drug resistance - Antibiotics wont work, making your plague more powerful. Requires 10 fardpoints." lmao
+	poopoo "Heat resistance - Your plague will be able to resist the heat, good for hot climates. Requires 6 fardpoints." lmao
+	poopoo "Cold resistance - Your plague will be able to resist the cold, good for cold climates. Requires 7 fardpoints." lmao
+	poopoo "Genetic Hardening - Makes the cure research go slower. Requires 17 fardpoints." lmao
+	
+	pee gamerun le equal 1
+	*griddy
+		gru infard le equal "EVOLVE drug resistance" snot "EVOLVE Drug resistance"
+		*griddy
+			gru Fardpoints >= 10
+			*griddy
+				gru DRunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -10 rn frfr lmao
+					ts mf Severity be +4 rn frfr lmao
+					ts mf Infectivity be +2 rn frfr lmao
+					ts mf DRunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE heat resistance" snot "EVOLVE Heat resistance"
+		*griddy
+			gru Fardpoints >= 6
+			*griddy
+				gru HRunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -6 rn frfr lmao
+					ts mf Severity be +2 rn frfr lmao
+					ts mf Infectivity be +1 rn frfr lmao
+					ts mf HRunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE cold resistance" snot "EVOLVE cold resistance"
+		*griddy
+			gru Fardpoints >= 7
+			*griddy
+				gru CRunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -7 rn frfr lmao
+					ts mf Severity be +2 rn frfr lmao
+					ts mf Infectivity be +1 rn frfr lmao
+					ts mf CRunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE genetic hardening" snot "EVOLVE Genetic hardening"
+		*griddy
+			gru Fardpoints >= 17
+			*griddy
+				gru GHunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -17 rn frfr lmao
+					ts mf Severity be +5 rn frfr lmao
+					ts mf Infectivity be +4 rn frfr lmao
+					ts mf GHunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EXIT" snot "Exit" snot "exit"
+		*griddy
+			poopoo "Exiting.." lmao
+			poopoo "Exited!" lmao
+			im_gonna_wreck_it lmao
+		griddy*
+		no_no_square
+		*griddy
+			poopoo "Not an ability!" lmao
+		griddy*
+	griddy*
+griddy*
+
+lit j*b diseasetransmissionmenu iz crazyy lmao
+*griddy
+	poopoo "Here are some transmission upgrades." lmao
+	ts mf gamerun be 1 rn frfr lmao
+	poopoo "Commands: EVOLVE <name> - Evolves a transmission, making your plague stronger. EXIT - Exits this menu" lmao
+	poopoo "Air particles - Your pathogen travels through air, increasing your infectivity. Requires 8 fardpoints." lmao
+	poopoo "Water Particles - Makes your pathogen travel through water, increasing your infectivity. - Requires 9 fardpoints." lmao
+	poopoo "Livestock - Your pathogen travels through livestock. Great through rural regions. Requires 11 fardpoints." lmao
+	poopoo "Blood - Your pathogen goes through blood, such as kissing, cross contamination, and more. Requires 17 fardpoints." lmao
+	poopoo "Insects and birds - Your pathogen travels through many insects and birds. Requires 21 fardpoints." lmao
+	
+	pee gamerun le equal 1
+	*griddy
+		gru infard le equal "EVOLVE air particles" snot "EVOLVE Air Particles"
+		*griddy
+			gru Fardpoints >= 8
+			*griddy
+				gru APunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -8 rn frfr lmao
+					ts mf Severity be +2 rn frfr lmao
+					ts mf Infectivity be +5 rn frfr lmao
+					ts mf APunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE Water particles" snot "EVOLVE water particles"
+		*griddy
+			gru Fardpoints >= 9
+			*griddy
+				gru WPunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -9 rn frfr lmao
+					ts mf Severity be +2 rn frfr lmao
+					ts mf Infectivity be +5 rn frfr lmao
+					ts mf WPunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE livestock" snot "EVOLVE Livestock"
+		*griddy
+			gru Fardpoints >= 11
+			*griddy
+				gru LSunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -11 rn frfr lmao
+					ts mf Severity be +1 rn frfr lmao
+					ts mf Infectivity be +3 rn frfr lmao
+					ts mf LSunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE blood" snot "EVOLVE Blood"
+		*griddy
+			gru Fardpoints >= 17
+			*griddy
+				no_no_square gru BLunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -17 rn frfr lmao
+					ts mf Severity be +5 rn frfr lmao
+					ts mf Infectivity be +4 rn frfr lmao
+					ts mf BLunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE Insects and birds" snot "EVOLVE insects and birds"
+		*griddy
+			gru Fardpoints >= 21
+			*griddy
+				no_no_square gru IABunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -21 rn frfr lmao
+					ts mf Severity be +5 rn frfr lmao
+					ts mf Infectivity be +4 rn frfr lmao
+					ts mf IABunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EXIT" snot "Exit" snot "exit"
+		*griddy
+			poopoo "Exiting.." lmao
+			poopoo "Exited!" lmao
+			im_gonna_wreck_it lmao
+		griddy*
+		no_no_square
+		*griddy
+			poopoo "Not an ability!" lmao
+		griddy*
+	griddy*
+griddy*
+
+lit j*b diseasesymptommenu iz crazyy lmao
+*griddy
+	poopoo "Here are some symptom upgrades." lmao
+	ts mf gamerun be 1 rn frfr lmao
+	poopoo "Commands: EVOLVE <name> - Evolves a symptom, making your plague stronger. EXIT - Exits this menu" lmao
+	poopoo "Insomnia - Inability to sleep, making people irritated and less productive. - Requires 3 fardpoints." lmao
+	poopoo "Stomachache - Makes the stomach really irritated, causing vomiting. - Requires 3 fardpoints." lmao
+	poopoo "Coughing - self explanatory - Requires 3 fardpoints." lmao
+	poopoo "Fever - Your body gets really hot, and in some cases can cause death. Requires 4 fardpoints." lmao
+	poopoo "Tumours - Causes cancer, which can lead to painful deaths. Requires 15 fardpoints." lmao
+	poopoo "Dizziness - Causes nausea and brain irritatibility. Requires 7 fardpoints." lmao
+	poopoo "Coma - Your brain goes unconcious for a long time, and can result to death if not monitored. Requires 12 fardpoints." lmao
+	poopoo "Possible cardiac arrest - Your heart goes in panic mode, which can be fatal. Requires 15 fardpoints." lmao
+	poopoo "Organ failure - Causes your organs to fail, which is extremely lethal. Requires 20 fardpoints." lmao
+	poopoo "Excessive diarrhea - Causes yo bum bum to go bye bye and explode. Requires 11 fardpoints." lmao
+	
+	pee gamerun le equal 1
+	*griddy
+		gru infard le equal "EVOLVE insomnia" snot "EVOLVE Insomnia"
+		*griddy
+			gru Fardpoints >= 3
+			*griddy
+				gru ISunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -3 rn frfr lmao
+					ts mf Severity be +1 rn frfr lmao
+					ts mf Infectivity be +2 rn frfr lmao
+					ts mf ISunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE Stomachache" snot "EVOLVE stomachache" snot "EVOLVE stomach ache" snot "EVOLVE Stomach ache"
+		*griddy
+			gru Fardpoints >= 3
+			*griddy
+				gru SAunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -3 rn frfr lmao
+					ts mf Severity be +2 rn frfr lmao
+					ts mf Infectivity be +2 rn frfr lmao
+					ts mf SAunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE coughing" snot "EVOLVE Coughing"
+		*griddy
+			gru Fardpoints >= 3
+			*griddy
+				gru CGHunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -3 rn frfr lmao
+					ts mf Severity be +3 rn frfr lmao
+					ts mf Infectivity be +2 rn frfr lmao
+					ts mf CGHunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE fever" snot "EVOLVE Fever"
+		*griddy
+			gru Fardpoints >= 4
+			*griddy
+				no_no_square gru FVEunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -4 rn frfr lmao
+					ts mf Severity be +5 rn frfr lmao
+					ts mf Infectivity be +4 rn frfr lmao
+					ts mf Lethality be +0.3 rn frfr lmao
+					ts mf FVEunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE Insects and birds" snot "EVOLVE insects and birds"
+		*griddy
+			gru Fardpoints >= 21
+			*griddy
+				no_no_square gru IABunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -21 rn frfr lmao
+					ts mf Severity be +5 rn frfr lmao
+					ts mf Infectivity be +4 rn frfr lmao
+					ts mf IABunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EXIT" snot "Exit" snot "exit"
+		*griddy
+			poopoo "Exiting.." lmao
+			poopoo "Exited!" lmao
+			im_gonna_wreck_it lmao
+		griddy*
+		no_no_square
+		*griddy
+			poopoo "Not an ability!" lmao
+		griddy*
+	griddy*
+griddy*
+
+lit j*b diseasemenumain iz crazyy lmao
+*griddy
+	ts mf gamerun be 1 rn frfr lmao
+	poopoo "What would you like to evolve?" lmao
+	poopoo "1 - Transmission" lmao
+	poopoo "2 - Symptoms" lmao
+	poopoo "3 - Abilities" lmao
+	poopoo "Exit" lmao
+	
+	pee gamerun le equal 1
+	*griddy
+		gru infard le equal "1"
+		*griddy
+			do j*b diseasetransmissionmenu sonion lmao
+		griddy*
+		
+		no_no_square gru infard le equal "2"
+		*griddy
+			do j*b diseasesymptommenu sonion lmao
+		griddy*
+		
+		no_no_square gru infard le equal "3"
+		*griddy
+			do j*b diseaseabilitymenu sonion lmao
+		griddy*
+		
+		no_no_square gru infard le equal "Exit" snot "exit"
+		*griddy
+			poopoo "Exiting disease menu.." lmao
+			poopoo "Exited" lmao
+			im_gonna_wreck_it lmao
+		griddy*
+		
+		no_no_square 
+		*griddy
+			poopoo "Unknown command" lmao
+		griddy*
+	griddy*
+griddy*
+
+lit j*b game iz crazyy lmao
+*griddy
+    /brownliquid Initialize the game state
+    poopoo "Infected", INFECTED lmao
+    poopoo "Died", DIED lmao
+    poopoo "Cure", Cure lmao
+    poopoo Fardpoints lmao
+    ts mf gamerun be 1 rn frfr lmao
+    poopoo "Welcome to Fardgue Inc. You need to make the most EVIL bacteria ever, causing the ultimate plague." lmao
+    poopoo "Your plague has started in Sweden." lmao
+    poopoo "COMMANDS: Disease - Open the disease menu, you can use this to evolve. DiseaseExit - Exits the disease menu. EXIT - Exit the game." lmao
+    be_patient 5 lmao
+    ts mf INFECTED be 3 rn frfr lmao
+    ts mf Fardpoints be 4 rn frfr lmao
+    poopoo INFECTED lmao
+
+    fourevor
+    *griddy
+        be_patient 30 lmao
+        ts mf Fardpoints be +3 rn frfr lmao
+		poopoo "Fardpoints", Fardpoints lmao
+    griddy* FARDPOINT_LOOP
+	
+	fourevor
+	*griddy
+		be_patient 15 lmao
+		ts mf INFECTED be +20 rn frfr lmao
+		poopoo "Infected", INFECTED lmao
+	griddy* INFECTION_LOOP
+	
+	fourevor
+	*griddy
+		be_patient 20 lmao
+		ts mf DIED be +1 rn frfr lmao
+		poopoo "Died", DIED lmao
+	griddy* DIED_LOOP
+	
+	fourevor
+	*griddy
+		be_patient 15 lmao
+		ts mf Cure be +1 rn frfr lmao
+		poopoo "Cure", Cure lmao
+	griddy* CURE_LOOP
+
+    pee gamerun le equal 1
+    *griddy
+        gru infard le equal "Disease"
+        *griddy
+            do j*b diseasemenumain sonion lmao
+        griddy*
+
+        no_no_square gru infard le equal "EXIT"
+        *griddy
+            im_gonna_wreck_it lmao
+        griddy*
+    griddy*
+griddy*
+
+lit j*b LOAD iz crazyy lmao
+*griddy
+    do j*b game sonion lmao
+    poopoo "Loaded. Ready to play!" lmao
+griddy*
+
+ohio3am lmao
+*griddy
+    poopoo "Welcome to Fardgue Inc." lmao
+	poopoo "Loading..." lmao
+    do j*b LOAD sonion lmao
+griddy*
+
+subway_surfers_bussin lmao
