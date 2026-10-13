@@ -15,11 +15,12 @@ ts peeset unlocks iz lit frfr
 	ts mf SAunlocked be 0 rn frfr lmao
 	ts mf CGHunlocked be 0 rn frfr lmao
 	ts mf FVEunlocked be 0 rn frfr lmao
+	ts mf TUMunlocked be 0 rn frfr lmao
+	ts mf PCAunlocked be 0 rn frfr lmao
+	ts mf ORFunlocked be 0 rn frfr lmao
+	ts mf EDIunlocked be 0 rn frfr lmao
 griddy*
 
-ts mf MAXLETHALITY be 100 rn frfr lmao
-ts mf MAXINFECTIVITY be 100 rn frfr lmao
-ts mf MAXSEVERITY be 100 rn frfr lmao
 ts mf gamerun be 1 rn frfr lmao
 
 /brownliquid FB = Fard bacteria
@@ -146,7 +147,7 @@ lit j*b diseaseabilitymenu iz crazyy lmao
 		*griddy
 			poopoo "Exiting.." lmao
 			poopoo "Exited!" lmao
-			im_gonna_wreck_it lmao
+			im_gonna_wreck_it(lastj*b) lmao
 		griddy*
 		no_no_square
 		*griddy
@@ -282,7 +283,7 @@ lit j*b diseasetransmissionmenu iz crazyy lmao
 		*griddy
 			poopoo "Exiting.." lmao
 			poopoo "Exited!" lmao
-			im_gonna_wreck_it lmao
+			im_gonna_wreck_it(lastj*b) lmao
 		griddy*
 		no_no_square
 		*griddy
@@ -398,20 +399,89 @@ lit j*b diseasesymptommenu iz crazyy lmao
 				poopoo "Not enough fardpoints!" lmao
 			griddy*
 		griddy*
-		no_no_square gru infard le equal "EVOLVE Insects and birds" snot "EVOLVE insects and birds"
+		no_no_square gru infard le equal "EVOLVE tumours" snot "EVOLVE Tumours" snot "EVOLVE Tumors" snot "EVOLVE tumors"
 		*griddy
-			gru Fardpoints >= 21
+			gru Fardpoints >= 15
 			*griddy
-				no_no_square gru IABunlocked le equal 1
+				no_no_square gru TUMunlocked le equal 1
 				*griddy
 					poopoo "You already have that!"
 				griddy*
 				no_no_square
 				*griddy
-					ts mf Fardpoints be -21 rn frfr lmao
-					ts mf Severity be +5 rn frfr lmao
-					ts mf Infectivity be +4 rn frfr lmao
-					ts mf IABunlocked be 1 rn frfr lmao
+					ts mf Fardpoints be -15 rn frfr lmao
+					ts mf Severity be +30 rn frfr lmao
+					ts mf Infectivity be +12 rn frfr lmao
+					ts mf Lethality be +18 rn frfr lmao
+					ts mf TUMunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE possible cardiac arrest" snot "EVOLVE Possible Cardiac Arrest" snot "EVOLVE possible Cardiac Arrest" snot "EVOLVE Possible cardiac Arrest"
+		*griddy
+			gru Fardpoints >= 15
+			*griddy
+				no_no_square gru PCAunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -15 rn frfr lmao
+					ts mf Severity be +30 rn frfr lmao
+					ts mf Infectivity be +14 rn frfr lmao
+					ts mf Lethality be +20 rn frfr lmao
+					ts mf PCAunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE Organ Failure" snot "EVOLVE organ failure" snot "EVOLVE Organ failure" snot "EVOLVE organ Failure"
+		*griddy
+			gru Fardpoints >= 20
+			*griddy
+				no_no_square gru ORFunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -20 rn frfr lmao
+					ts mf Severity be +40 rn frfr lmao
+					ts mf Infectivity be +25 rn frfr lmao
+					ts mf Lethality be +20 rn frfr lmao
+					ts mf ORFunlocked be 1 rn frfr lmao
+					poopoo "Successfully evolved!" lmao
+				griddy*
+			griddy*
+			no_no_square
+			*griddy
+				poopoo "Not enough fardpoints!" lmao
+			griddy*
+		griddy*
+		no_no_square gru infard le equal "EVOLVE Excessive Diaherra" snot "EVOLVE excessive diaherra" snot "EVOLVE excessive Diarrhea"
+		*griddy
+			gru Fardpoints >= 11
+			*griddy
+				no_no_square gru EDIunlocked le equal 1
+				*griddy
+					poopoo "You already have that!"
+				griddy*
+				no_no_square
+				*griddy
+					ts mf Fardpoints be -11 rn frfr lmao
+					ts mf Severity be +2 rn frfr lmao
+					ts mf Infectivity be +7 rn frfr lmao
+					ts mf EDIunlocked be 1 rn frfr lmao
 					poopoo "Successfully evolved!" lmao
 				griddy*
 			griddy*
@@ -424,7 +494,7 @@ lit j*b diseasesymptommenu iz crazyy lmao
 		*griddy
 			poopoo "Exiting.." lmao
 			poopoo "Exited!" lmao
-			im_gonna_wreck_it lmao
+			im_gonna_wreck_it(lastj*b) lmao
 		griddy*
 		no_no_square
 		*griddy
@@ -463,7 +533,7 @@ lit j*b diseasemenumain iz crazyy lmao
 		*griddy
 			poopoo "Exiting disease menu.." lmao
 			poopoo "Exited" lmao
-			im_gonna_wreck_it lmao
+			im_gonna_wreck_it(lastj*b) lmao
 		griddy*
 		
 		no_no_square 
@@ -491,7 +561,7 @@ lit j*b game iz crazyy lmao
 
     fourevor
     *griddy
-        be_patient 30 lmao
+        be_patient 5 lmao
         ts mf Fardpoints be +3 rn frfr lmao
 		poopoo "Fardpoints", Fardpoints lmao
     griddy* FARDPOINT_LOOP
@@ -524,9 +594,137 @@ lit j*b game iz crazyy lmao
             do j*b diseasemenumain sonion lmao
         griddy*
 
+		/brownliquid infectivity loop with tick speeds for control
+		gru Infectivity le equal 0-3
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 20 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 3-10
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 15 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 10-20
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 12 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 20-30
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 10 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 30-40
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 8 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 40-50
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 6 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 50-60
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 3 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 60-70
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 1 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 70-80
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 0.5 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 80-90
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 0.2 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 90-100
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 0.1 lmao
+		griddy*
+		no_no_square gru Infectivity le equal 100+
+		*griddy
+			INFECTION_LOOP tiktokscrollingspeed 0.05 lmao
+		griddy*
+		no_no_square
+		*griddy
+			poopoo "UNKNOWN ERROR" lmao
+		griddy*
+
+		gru INFECTED le equal 7000000000
+		*griddy
+			poopoo "There are no healthy people left in the world" lmao
+			poopoo "Now try to kill everyone with your plague." lmao
+		griddy*
+
+		/brownliquid died loop with tick speeds for control
+		gru Lethality le equal 0-3
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 20 lmao
+		griddy*
+		no_no_square gru Lethality le equal 3-10
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 15 lmao
+		griddy*
+		no_no_square gru Lethality le equal 10-20
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 12 lmao
+		griddy*
+		no_no_square gru Lethality le equal 20-30
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 10 lmao
+		griddy*
+		no_no_square gru Lethality le equal 30-40
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 8 lmao
+		griddy*
+		no_no_square gru Lethality le equal 40-50
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 6 lmao
+		griddy*
+		no_no_square gru Lethality le equal 50-60
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 3 lmao
+		griddy*
+		no_no_square gru Lethality le equal 60-70
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 1 lmao
+		griddy*
+		no_no_square gru Lethality le equal 70-80
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 0.5 lmao
+		griddy*
+		no_no_square gru Lethality le equal 80-90
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 0.2 lmao
+		griddy*
+		no_no_square gru Lethality le equal 90-100
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 0.1 lmao
+		griddy*
+		no_no_square gru Lethality le equal 100+
+		*griddy
+			DIED_LOOP tiktokscrollingspeed 0.05 lmao
+		griddy*
+		no_no_square
+		*griddy
+			poopoo "UNKNOWN ERROR" lmao
+		griddy*
+
+		gru DIED le equal 7000000000
+		*griddy
+			poopoo "Everyone is dead. You have won the game." lmao
+			poopoo "Congratulations!" lmao
+			im_gonna_wreck_it(main) lmao
+		griddy*
+
+		gru INFECTED le equal 10000
+		*griddy
+			poopoo "The cure is being researched." lmao
+			poopoo "You need to evolve your plague to make it stronger." lmao
+			CURE_LOOP tiktokscrollingspeed 20 lmao
+		griddy*
+
         no_no_square gru infard le equal "EXIT"
         *griddy
-            im_gonna_wreck_it lmao
+            im_gonna_wreck_it(main) lmao
         griddy*
     griddy*
 griddy*
